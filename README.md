@@ -7,7 +7,6 @@ pm.response.to.have.body("This is the first responce from server!ss");
 });
 
 // 3. Спарсить response body в json.
-```javascript
 let resp = pm.response.json();
 let resp_age = resp.age;
 let resp_name = resp.name;
