@@ -450,7 +450,7 @@ pm.test("salary[2] > salary[0] and salary[2] > salary[1]", function(){
 //         console.log(false) 
 //     }
 // }
-// CheckSalary(true);
+// CheckSalary();
 
 ______________
 ## /test_pet_info
