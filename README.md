@@ -2,7 +2,7 @@
 
 ```javascript
 
-##/first
+## /first
 // 1. Проверить, что в body приходит правильный string.
 pm.test("Body is correct", function () {
 pm.response.to.have.body("This is the first responce from server!ss");
