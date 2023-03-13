@@ -1,4 +1,6 @@
-# HOMEWORK 2 [Collection](https://github.com/SawkaQA/Postman/blob/main/HW_2.postman_collection.json) [Environment](https://github.com/SawkaQA/Postman/blob/main/QA.postman_environment.json)
+# Postman
+
+## HOMEWORK 2 [Collection](https://github.com/SawkaQA/Postman/blob/main/HW_2.postman_collection.json) [Environment](https://github.com/SawkaQA/Postman/blob/main/QA.postman_environment.json)
 
 ```javascript
 ## /first
@@ -8,9 +10,9 @@ pm.test("Body is correct", function () {
 pm.response.to.have.body("This is the first responce from server!ss");
 });
 
-_______________
+______________
 ## /user_info_3
-
+______________
 // 3. Спарсить response body в json.
 let req = request.data;
 let req_age = req.age;
@@ -67,9 +69,9 @@ pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
 
-________________
+______________
 ## /object_info_3
-
+______________
 // 3. Спарсить response body в json.
 var resp = pm.response.json();
 var resp_name = resp.name;
@@ -121,9 +123,9 @@ pm.test("Dog age is 4", function() {
   pm.expect(dogname).to.have.property("age", 4);
 });
 
-_________________
+______________
 ## object_info_4
-
+______________
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
@@ -203,9 +205,9 @@ for (i in resp_salary) {
     console.log("Key "+ i, "value " + resp_salary[i]);
 };
 
-_______________
+______________
 ## /user_info_2
-
+______________
 // 6. Спарсить response body в json.
 let resp = pm.response.json();
 let resp_salary_after_1_5_year = resp["qa_salary_after_1.5_year"];
@@ -302,7 +304,7 @@ console.log(`${key}: ${resp.person[key]}`);
 }
 ```
 
-# HOMEWORK 3 [Collection]() [Environment]()
+## HOMEWORK 3 [Collection]() [Environment]()
 
 ```javascript
 
@@ -319,7 +321,7 @@ pm.environment.set("token", resp_token);
 
 ______________
 ## /user_info
-
+______________
 // Тесты:
 // 1) Статус код 200
 pm.test("Status code is 200", function () {
@@ -383,7 +385,7 @@ pm.environment.set("salary", resp_qa_sal_x4);
 
 ______________
 ## /new_data
-
+______________
 // Тесты:
 // 1) Статус код 200
 pm.test("Status code is 200", function () {
@@ -450,9 +452,9 @@ pm.test("salary[2] > salary[0] and salary[2] > salary[1]", function(){
 // }
 // CheckSalary(true);
 
-_________________
+______________
 ## /test_pet_info
-
+______________
 // Тесты:
 // 1) Статус код 200
 pm.test("Status code is 200", function () {
@@ -505,9 +507,9 @@ pm.test("Check weight for daily sleep", function () {
     pm.expect(resp_daily_sleep).to.eql(req_weight * 2.5);
 });
 
-_________________
+______________
 ## /get_test_user
-
+______________
 // Тесты:
 // 1) Статус код 200
 pm.test("Status code is 200", function () {
@@ -595,9 +597,10 @@ let req_age = req.age;
 pm.test("Resp age = req age", function () {
     pm.expect(req_age).to.eql(resp_age);
 });
-____________
-## /currency
 
+______________
+## /currency
+______________
 // Тесты:
 // 1) Можете взять любой объект из присланного списка, используйте js random.
 let resp = pm.response.ison();
@@ -607,9 +610,9 @@ pm.environment.set ("Cur_ID", randomObj.Cur_ID)
 // В объекте возьмите Cur_ID и передать через окружение в следующий запрос.
 let curId = pm.environment.get("Cur_ID")
 
-___________________
+______________
 ## /curr_byn
-
+______________
 // Тесты:
 // 1) Статус код 200
 pm.test("Status code is 200", function () {
