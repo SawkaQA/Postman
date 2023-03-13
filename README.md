@@ -1,1 +1,6 @@
 # HOMEWORK 2 [Collection](https://github.com/SawkaQA/Postman/blob/main/HW_2.postman_collection.json) [Environment](https://github.com/SawkaQA/Postman/blob/main/QA.postman_environment.json)
+
+// Проверить, что в body приходит правильный string.
+`pm.test("Body is correct", function () {
+    pm.response.to.have.body("This is the first responce from server!ss");
+});`
